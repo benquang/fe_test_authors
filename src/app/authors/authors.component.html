@@ -1,0 +1,22 @@
+<div *ngIf="jsonData">
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Top Work</th>
+    <th>Work Count</th>
+    <th>Version</th>
+  </tr>
+  <tr *ngFor="let item of jsonData">
+    <td>{{item.key}}</td>
+    <td>{{item.type}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.top_work}}</td>
+    <td>{{item.work_count}}</td>
+    <td>{{item._version_}}</td>
+  </tr>
+
+</table>
+  <!--  -->
+</div>
